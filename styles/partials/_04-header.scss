@@ -1,0 +1,48 @@
+header {
+    background: url(../assets/home-about/home-image-1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header-nav {
+    width: 60%;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+li.nav-item {
+    font-family: $main-font;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 20px 0;
+    a {
+        transition: all .5s ease;
+        padding: 20px 40px;
+        border: 1px solid red;
+    }
+    a:hover {
+        color: $accent;
+    }
+}
+
+.logo {
+    font-family: $big-font;
+    font-size: 2.5rem;
+}
+
+.main-title {
+    // width: 50%;
+    // margin: 0 auto;
+    border: 1px solid red;
+   h1 {
+       margin: 0 auto;
+       font-family: $big-font;
+       font-size: 10rem;
+       font-weight: 500;
+       letter-spacing: 2.4px; 
+       color: $accent;
+       text-align: center;
+       border: 1px solid red;
+   }
+}

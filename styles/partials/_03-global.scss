@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 125%;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flx-col {
+    display: flex;
+    flex-flow: column;
+}
+
+.aln-center {
+    display: flex;
+    align-items: center;
+}
+
+.aln-base {
+    display: flex;
+    align-items: baseline;
+}
+
+.flx-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spc-btw {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.spc-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.spc-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
