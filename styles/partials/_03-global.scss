@@ -3,17 +3,28 @@
     margin: 0;
 }
 
+body {
+    max-width: 1600px;
+}
+
 html {
     font-size: 125%;
 }
 
 a {
     text-decoration: none;
-    color:white;
+}
+
+a, h1, h2, h3 {
+    color: white
 }
 
 li {
     list-style: none;
+}
+
+img {
+    display: block;
 }
 
 .flex {
