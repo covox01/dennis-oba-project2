@@ -132,6 +132,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -215,25 +228,8 @@ img {
   justify-content: space-evenly; }
 
 header {
-  background: url(../assets/home-about/home-image-1.jpg);
-  background-size: contain;
-  width: 100%;
-  background-repeat: no-repeat;
-  border: 1px solid red;
-  min-height: 500px; }
-
-.main-grid {
-  display: grid;
-  grid-template-rows: repeat(20, 10%);
-  grid-template-columns: repeat(20, 10%);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 800px; }
-
-.sub-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  background: black;
+  height: 2000px; }
 
 .header-nav {
   grid-row: 1/2;
@@ -260,9 +256,7 @@ header {
   font-size: 2.5rem; }
 
 .main-title {
-  width: 100%;
-  grid-column: 1/11;
-  grid-row: 4/7; }
+  width: 100%; }
   .main-title .main-title-item {
     z-index: 1;
     grid-column: 2/4;
@@ -283,12 +277,15 @@ header {
       text-align: left;
       border: 1px solid red; }
 
-.bg-img {
-  grid-column: 3 / 5;
-  grid-row: 1/2;
-  background: url(../assets/home-about/header-box.jpg);
+.header-bg {
+  background: url(../assets/home-about/home-image-1.jpg);
   background-size: contain;
-  background-repeat: no-repeat;
+  height: 50vh;
   width: 100%;
-  border: 1px solid blue;
-  height: 600px; }
+  border: 1px solid red; }
+
+.header-bg-side {
+  background: url(../assets/home-about/header-box.jpg);
+  background-size: cover;
+  height: 600px;
+  border: 1px solid red; }
