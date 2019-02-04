@@ -81,3 +81,45 @@ img {
     // border: 1px solid red;
 }
 
+.button a {
+    font-family: $big-font;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    background: $accent-2;
+    padding: 5px 40px;
+}
+
+main {
+    grid-row: 1/10;
+    grid-column: 1/12;
+    display: grid;
+    grid-template-columns: 12.5%
+                           12.5%
+                           12.5%
+                           6.25%
+                           6.25%
+                        //    --
+                           6.25%
+                           6.25%
+                           12.5%
+                           12.5%
+                           12.5%;
+
+    grid-template-rows: 700px
+                        200px
+                        350px
+                        70px
+                        30px
+                        70px
+                        40px
+                        250px
+                        300px
+                        100px
+                        50px
+                        100px
+                        400px
+                        200px
+                        200px;
+}
+

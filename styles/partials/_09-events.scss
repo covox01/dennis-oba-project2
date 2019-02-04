@@ -1,0 +1,25 @@
+.events-img img {
+    box-shadow: -15px 15px $accent;
+    width: 100%;
+}
+
+.events {
+    grid-column: 1 / 11;
+    grid-row: 16;
+    background: $background-2;
+    padding: 10% 0; 
+    article {
+        width: 70%;
+        margin-left: 5%;
+        h2 {
+        color: $accent;
+        font-size: 2.7rem;
+        padding-bottom: 20px;
+        }
+        p {
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+        padding-bottom: 50px;
+        }
+    }  
+}
