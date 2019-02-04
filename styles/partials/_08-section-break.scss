@@ -1,10 +1,17 @@
 .section-break {
-    margin: 0 auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 500px;
 }
 
 .section-break-item {
+    grid-row: 1/2;
+    grid-column: 1/2;
     background: url(../assets/banner/banner-image.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
+    display: block;
+    width: 100%
+    // border: 1px solid red;
 }

@@ -241,7 +241,7 @@ img {
 .super-grid {
   display: grid;
   grid-template-columns: 12.5% 12.5% 12.5% 6.25% 6.25% 6.25% 6.25% 12.5% 12.5% 12.5%;
-  grid-template-rows: 700px 200px 350px 70px 30px 70px 40px 250px 300px 100px 50px 100px 400px; }
+  grid-template-rows: 700px 200px 350px 70px 30px 70px 40px 250px 300px 100px 50px 100px; }
 
 header {
   grid-row: 1/2;
@@ -455,10 +455,16 @@ header {
     margin-top: 3%; }
 
 .section-break {
-  margin: 0 auto; }
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 500px; }
 
 .section-break-item {
+  grid-row: 1/2;
+  grid-column: 1/2;
   background: url(../assets/banner/banner-image.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 500px; }
+  display: block;
+  width: 100%; }
