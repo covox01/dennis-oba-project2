@@ -1,12 +1,23 @@
+.about-1 {
+    grid-row: 2/6;
+    grid-column: 1/11;
+    background: $background-2;
+}
+
+.about-item-img img {
+    box-shadow: 10px 10px $accent;
+    margin-bottom: 10%;
+    width: 100%;
+}
+
 .about-section {
     background: $background-2;
     .about-item {
         width: 50%;
         padding-top: 2%;
         padding-bottom: 2%;
-        
         h2 {
-            font-size: 3rem;
+            font-size: 2.4rem;
             font-weight: 700px;
             padding-top: 20px;
             padding-bottom: 20px;
@@ -15,9 +26,11 @@
             font-size: 1.7rem;
             word-spacing: 2px;
             line-height: 1.3rem;
-            letter-spacing: 2px;
             padding-right: 10%;
         }
+    }
+    .about-item:last-child p {
+        padding-right: 0;
     }
 }
 

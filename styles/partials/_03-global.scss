@@ -5,6 +5,7 @@
 
 body {
     max-width: 1600px;
+    // background: $background;
 }
 
 html {
@@ -19,6 +20,10 @@ h1, h2, h3, a, p {
     color: white;
     font-family: $main-font;
     line-height: 1rem;
+}
+
+p {
+    letter-spacing: 1px;
 }
 
 li {
@@ -69,4 +74,10 @@ img {
     justify-content: space-evenly;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 85%;
+    // border: 1px solid red;
+}
 

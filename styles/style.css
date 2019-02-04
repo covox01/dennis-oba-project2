@@ -163,6 +163,9 @@ h1, h2, h3, a, p {
   font-family: "Chathura", sans-serif;
   line-height: 1rem; }
 
+p {
+  letter-spacing: 1px; }
+
 li {
   list-style: none; }
 
@@ -230,10 +233,23 @@ img {
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly; }
 
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 85%; }
+
+.super-grid {
+  display: grid;
+  grid-template-columns: 12.5% 12.5% 12.5% 6.25% 6.25% 6.25% 6.25% 12.5% 12.5% 12.5%;
+  grid-template-rows: 700px 200px 350px 70px 30px 70px 40px 250px 300px 100px 50px 100px 400px; }
+
 header {
+  grid-row: 1/2;
+  grid-column: 1/11;
+  z-index: 10;
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
-  grid-template-rows: 100px  200px  50px  100px 250px 60px 100px; }
+  grid-template-rows: 100px  200px  50px  100px 250px 80px 100px; }
 
 .header-bg {
   grid-row: 1/6;
@@ -241,8 +257,7 @@ header {
   background: url(../assets/home-about/home-image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  border: 1px solid yellow; }
+  width: 100%; }
 
 .header-bg-side {
   grid-row: 3/7;
@@ -293,11 +308,23 @@ header {
     margin: 0 auto; }
     .main-title .main-title-item span {
       font-family: "Chathura", sans-serif;
-      font-size: 3.5rem;
+      font-size: 4rem;
       color: white;
+      letter-spacing: 3.5px;
       line-height: 1rem;
       padding-left: 7px;
       text-align: left; }
+
+.about-1 {
+  grid-row: 2/6;
+  grid-column: 1/11;
+  background: #111010; }
+
+.about-item-img img {
+  -webkit-box-shadow: 10px 10px #ff8327;
+  box-shadow: 10px 10px #ff8327;
+  margin-bottom: 10%;
+  width: 100%; }
 
 .about-section {
   background: #111010; }
@@ -306,7 +333,7 @@ header {
     padding-top: 2%;
     padding-bottom: 2%; }
     .about-section .about-item h2 {
-      font-size: 3rem;
+      font-size: 2.4rem;
       font-weight: 700px;
       padding-top: 20px;
       padding-bottom: 20px; }
@@ -314,8 +341,9 @@ header {
       font-size: 1.7rem;
       word-spacing: 2px;
       line-height: 1.3rem;
-      letter-spacing: 2px;
       padding-right: 10%; }
+  .about-section .about-item:last-child p {
+    padding-right: 0; }
 
 .icon {
   display: -webkit-box;
@@ -342,7 +370,95 @@ header {
     -ms-flex-align: center;
     align-items: center; }
 
-.about-item-img img {
-  -webkit-box-shadow: 15px 15px #ff8327;
-  box-shadow: 15px 15px #ff8327;
-  border: 1px solid red; }
+.about-2-a {
+  grid-column: 1/5;
+  grid-row: 5/11; }
+
+.about-2-bg {
+  grid-row: 6/12;
+  grid-column: 1/11;
+  background: #220303;
+  width: 100%; }
+
+.about-section-1 {
+  background: #220303;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-bottom: 10%; }
+  .about-section-1 .about-item {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 80%; }
+    .about-section-1 .about-item h2 {
+      color: #ff8327;
+      font-size: 2.7rem;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .about-section-1 .about-item p {
+      font-size: 1.7rem;
+      line-height: 1.8rem;
+      padding-bottom: 50px; }
+
+.button a {
+  font-family: "Tulpen One", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  background: #bf2603;
+  padding: 5px 30px; }
+
+.about-2-b {
+  grid-column: 7/11;
+  grid-row: 8/12;
+  z-index: 20; }
+
+.about-section-2 {
+  background: #220303;
+  padding-bottom: 10%; }
+  .about-section-2 .about-item-2 {
+    width: 80%; }
+    .about-section-2 .about-item-2 h2 {
+      color: #ff8327;
+      font-size: 2.7rem;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .about-section-2 .about-item-2 p {
+      font-size: 1.7rem;
+      line-height: 1.8rem;
+      padding-bottom: 50px; }
+  .about-section-2 .about-item-img img {
+    -webkit-box-shadow: -10px 10px #ff8327;
+    box-shadow: -10px 10px #ff8327;
+    margin-top: 10%; }
+
+.party-inquiry {
+  grid-row: 12/14;
+  grid-column: 1/11;
+  background: #111010;
+  text-align: center;
+  padding: 10% 0; }
+  .party-inquiry .container {
+    width: 65%;
+    max-width: 1000px; }
+  .party-inquiry h2 {
+    font-size: 2.7rem;
+    color: #ff8327;
+    padding-top: 20px;
+    padding-bottom: 30px; }
+  .party-inquiry p {
+    font-size: 1.7rem;
+    word-spacing: 2px;
+    line-height: 1.8rem; }
+  .party-inquiry .button {
+    margin-top: 3%; }
+
+.section-break {
+  margin: 0 auto; }
+
+.section-break-item {
+  background: url(../assets/banner/banner-image.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px; }
