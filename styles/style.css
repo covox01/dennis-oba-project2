@@ -158,14 +158,17 @@ html {
 a {
   text-decoration: none; }
 
-a, h1, h2, h3 {
-  color: white; }
+h1, h2, h3, a, p {
+  color: white;
+  font-family: "Chathura", sans-serif;
+  line-height: 1rem; }
 
 li {
   list-style: none; }
 
 img {
-  display: block; }
+  display: block;
+  background-repeat: no-repeat; }
 
 .flex {
   display: -webkit-box;
@@ -228,19 +231,35 @@ img {
   justify-content: space-evenly; }
 
 header {
-  background: black;
-  height: 2000px; }
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: 100px  200px  50px  100px 250px 60px 100px; }
+
+.header-bg {
+  grid-row: 1/6;
+  grid-column: 1/9;
+  background: url(../assets/home-about/home-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  border: 1px solid yellow; }
+
+.header-bg-side {
+  grid-row: 3/7;
+  grid-column: 5/9;
+  background: url(../assets/home-about/header-box.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .header-nav {
   grid-row: 1/2;
-  grid-column: 1/11;
-  max-width: 700px;
-  margin: 0 auto;
-  border: 1px solid red; }
+  grid-column: 1/9;
+  width: 750px;
+  margin: 0 auto; }
 
 .nav-item {
   font-family: "Chathura", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   padding: 20px 0; }
   .nav-item a {
@@ -252,40 +271,78 @@ header {
     color: #ff8327; }
 
 .logo {
-  font-family: "Tulpen One", sans-serif;
-  font-size: 2.5rem; }
+  font-size: 3rem;
+  letter-spacing: 1px; }
+  .logo a {
+    font-family: "Tulpen One", sans-serif;
+    padding: 40px;
+    width: 80px; }
 
 .main-title {
+  grid-row: 4/5;
+  grid-column: 3/7;
   width: 100%; }
   .main-title .main-title-item {
     z-index: 1;
-    grid-column: 2/4;
-    grid-row: 1/2;
     font-family: "Tulpen One", sans-serif;
-    font-size: 10rem;
+    font-size: 13rem;
     font-weight: 500;
-    line-height: 8rem;
+    line-height: 10.5rem;
     letter-spacing: 2.4px;
     color: #ff8327;
     margin: 0 auto; }
     .main-title .main-title-item span {
       font-family: "Chathura", sans-serif;
-      font-size: 2rem;
+      font-size: 3.5rem;
       color: white;
       line-height: 1rem;
-      padding-left: 5px;
-      text-align: left;
-      border: 1px solid red; }
+      padding-left: 7px;
+      text-align: left; }
 
-.header-bg {
-  background: url(../assets/home-about/home-image-1.jpg);
-  background-size: contain;
-  height: 50vh;
-  width: 100%;
-  border: 1px solid red; }
+.about-section {
+  background: #111010; }
+  .about-section .about-item {
+    width: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%; }
+    .about-section .about-item h2 {
+      font-size: 3rem;
+      font-weight: 700px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .about-section .about-item p {
+      font-size: 1.7rem;
+      word-spacing: 2px;
+      line-height: 1.3rem;
+      letter-spacing: 2px;
+      padding-right: 10%; }
 
-.header-bg-side {
-  background: url(../assets/home-about/header-box.jpg);
-  background-size: cover;
-  height: 600px;
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  background: #bf2603;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 3%; }
+  .icon i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.about-item-img img {
+  -webkit-box-shadow: 15px 15px #ff8327;
+  box-shadow: 15px 15px #ff8327;
   border: 1px solid red; }

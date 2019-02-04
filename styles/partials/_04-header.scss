@@ -1,20 +1,57 @@
+// .super-grid {
+//     display: grid;
+//     grid-template-columns: repeat(8, 12.5%);
+//     grid-template-rows: 100px 
+//                         200px 
+//                         50px 
+//                         250px 
+//                         60px
+//                         100px;
+
+// }
+
 header {
-    background: black;
-    height: 2000px;
+    // background: black;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 100px 
+                        200px 
+                        50px 
+                        100px
+                        250px
+                        60px
+                        100px;
+}
+
+.header-bg {
+    grid-row: 1/6;
+    grid-column: 1/9;
+    background: url(../assets/home-about/home-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    border: 1px solid yellow;
+}
+
+.header-bg-side {
+    grid-row: 3/7;
+    grid-column: 5/9;
+    background: url(../assets/home-about/header-box.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-nav {
-    // width: 60%;
-    grid-row: 1/2; 
-    grid-column: 1/11;
-    max-width: 700px;
+    grid-row: 1/2;
+    grid-column: 1/9;
+    // width: 80%;
+    width: 750px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .nav-item {
     font-family: $main-font;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-transform: uppercase;
     padding: 20px 0;
     a {
@@ -27,49 +64,40 @@ header {
 }
 
 .logo {
-    font-family: $big-font;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    a {
+        font-family: $big-font;
+        padding: 40px;
+        width: 80px;
+    }
 }
 
 .main-title {
+    grid-row: 4/5;
+    grid-column: 3/7;
     width: 100%;
     .main-title-item {
         z-index: 1;
-        grid-column: 2/4;
-        grid-row: 1/2;
         font-family: $big-font;
-        font-size: 10rem;
+        font-size: 13rem;
         font-weight: 500;
-        line-height: 8rem;
+        line-height: 10.5rem;
         letter-spacing: 2.4px; 
         color: $accent;
         margin: 0 auto;
         span {
             font-family: $main-font;
-            font-size: 2rem;
+            font-size: 3.5rem;
             color: white;
             line-height: 1rem;
-            padding-left: 5px;
+            padding-left: 7px;
             text-align: left;
-            border: 1px solid red;
         }
     }
 }
 
-.header-bg {
-    background: url(../assets/home-about/home-image-1.jpg);
-    background-size: contain;
-    height: 50vh;
-    width: 100%;
-    border: 1px solid red;
-}
 
-.header-bg-side {
-    background: url(../assets/home-about/header-box.jpg);
-    background-size: cover;
-    height: 600px;
-    border: 1px solid red;
-}
 
 
 
