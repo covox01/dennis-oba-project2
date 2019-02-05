@@ -23,3 +23,33 @@
         }
     }  
 }
+
+@media (max-width: 1200px) {
+    section.events {
+        padding-top: 0;
+        position: relative;
+    }
+    .events .container {
+        flex-flow: column;
+        border: 7px solid $accent;
+        padding-top: 0;
+         position: absolute;
+        top: 0;
+        right: 0;
+        article.events-item {
+            background: rgba(17, 16, 16, .5);
+            margin: 5% auto 10%;
+            text-align: center;
+            width: 80%;
+            padding: 10%;
+            // border: 7px solid $accent;
+        }
+    }
+
+    .events-img img {
+        width: 40%;
+        margin: 0 auto;
+        box-shadow: none;
+        display: none;
+    }
+}

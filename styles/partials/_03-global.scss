@@ -4,8 +4,9 @@
 }
 
 body {
+    margin: 0 auto;
     max-width: 1600px;
-    // background: $background;
+    background: $background-2;
 }
 
 html {
@@ -124,62 +125,7 @@ main {
 
 @media (max-width: 1000px) {
     main {
-        // display: block;
-        grid-template-rows: 760px
-                            200px
-                            350px
-                            70px
-                            30px
-                            70px
-                            40px
-                            250px
-                            300px
-                            100px
-                            50px
-                            100px
-                            400px
-                            200px
-                            200px;
+        display: block;
+        z-index: 100;
     }
 }
-
-@media (max-width: 800px) {
-     main {
-        grid-template-rows: 760px
-                            900px
-                            350px
-                            70px
-                            30px
-                            70px
-                            40px
-                            250px
-                            300px
-                            100px
-                            50px
-                            100px
-                            400px
-                            200px
-                            200px;
-    }
-}
-
-@media (max-width: 400px) {
-     main {
-        grid-template-rows: 780px
-                            1000px
-                            350px
-                            70px
-                            30px
-                            70px
-                            40px
-                            250px
-                            300px
-                            100px
-                            50px
-                            100px
-                            400px
-                            200px
-                            200px;
-    }
-}
-

@@ -55,13 +55,13 @@
 
 @media (max-width: 1000px) {
     .about-1 {
-        grid-row: 2/4;
-        grid-column: 1/11;
-        padding: 5% 0;
+        padding: 10% 0;
         align-items: center;
+        // border: 1px solid red;
     }
     .about-section {
         transition: all 1s ease;
+        // border: 1px solid red;
         .about-item {
             // padding: 10% 0;
             .icon {
@@ -76,20 +76,19 @@
             }
         }
     }
+    .about-1-bg-color {
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
-    .about-1-bg-color {
-        // border: 1px solid red;
-        padding: 10% 0;
-    }
     .about-section {  
         flex-flow: column;
         text-align: center;
         margin: 0 auto;
         width: 100%;
         .about-item {
-            padding: 8% 0;
+            padding: 10% 0;
             flex-flow: column;
             margin: 0 auto;
             width: 70%;

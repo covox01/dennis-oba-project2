@@ -22,6 +22,12 @@
                         2470px;
 }
 
+@media (max-width: 1000px) {
+    .super-grid {
+        display: block;
+    }
+}
+
 header {
     grid-row: 1/2;
     grid-column: 1/11;
@@ -39,33 +45,37 @@ header {
 
 @media (max-width: 1000px) {
     header {
-        // background: url(../assets/home-about/home-image-1.jpg);
-        // background-size: cover;
-        // background-position: center;
+        background: url(../assets/home-about/home-image-1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: block;
+        .header-bg {
+            display: none;
+        }
         // display: block;
-        grid-template-rows: 100px 
-                            160px 
-                            50px 
-                            190px
-                            250px
-                            80px
-                            100px;
+        // grid-template-rows: 100px 
+        //                     160px 
+        //                     50px 
+        //                     190px
+        //                     250px
+        //                     80px
+        //                     100px;
     }
-    
 }
 
-@media (max-width: 350px) {
-    header {
-        grid-template-rows: 100px 
-                            200px 
-                            50px 
-                            190px
-                            250px
-                            80px
-                            100px;
-    }
+// @media (max-width: 350px) {
+//     header {
+//         grid-template-rows: 100px 
+//                             200px 
+//                             50px 
+//                             190px
+//                             250px
+//                             80px
+//                             100px;
+//     }
     
-}
+// }
 
 .header-bg {
     grid-row: 1/6;
@@ -102,6 +112,7 @@ header {
     grid-column: 1/9;
     width: 750px;
     margin: 0 auto;
+    // border: 1px solid red;
 }
 
 .hamburger {
@@ -198,8 +209,9 @@ header {
 
 @media (max-width: 1000px) {
     .main-title {
-        grid-row: 3/5;
-        grid-column: 1/9;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 200px);
     }
 }
 

@@ -32,8 +32,11 @@
             font-size: 1.7rem;
             line-height: 1.8rem;
             padding-bottom: 50px;
+            text-align: center;
         }
-    }
+}
+
+   
 
 .about-2-b {
     grid-column: 7/11;
@@ -56,6 +59,7 @@
             font-size: 1.7rem;
             line-height: 1.8rem;
             padding-bottom: 50px;
+            text-align: center;
         }
     }
     .about-item-img img {
@@ -63,6 +67,97 @@
         margin-top: 10%;
         width: 100%;
         align-self: center;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .about-2-bg {
+        display: none;
+    }
+    .about-2-a {
+        background: $background-2;
+        padding: 5%;
+        .about-section-1 {
+            align-items: flex-start;;
+            padding: 3% 0 5%;
+            border: 7px solid $accent;
+            .about-item-img {
+                margin: 0 auto;
+                width: 80%;
+                padding-top: 10%;
+            }
+            .about-item {
+                padding: 5%;
+                padding-top: 0;
+                align-items: flex-start;
+                margin: 0 auto;
+                h2 {
+                    margin: 0 auto;
+                    justify-content: flex-start;
+                    padding-bottom: 30px;
+                }
+                p {
+                    // text-align: center;
+                    font-size: 1.4rem;
+                    line-height: 1.4rem;
+                }
+                .button {
+                    align-self: flex-end;
+                    margin: 0 auto;
+                    a {
+                        font-size: 1.4rem;
+                        letter-spacing: 1.3px;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    .about-2-b {
+        padding: 5%;
+        .about-section-2 {
+        flex-direction: column-reverse;
+        border: 7px solid $accent;
+        padding: 5% 0 5%;
+        .about-item-2 {
+            padding: 30px;
+            margin: 0 auto;
+            h2 {
+                margin: 0 auto;
+                padding-top: 0;
+                padding-bottom: 30px;
+            }
+            p {
+                margin: 0 auto;
+                // text-align: center;
+                font-size: 1.4rem;
+                line-height: 1.4rem;
+            }
+            .button {
+                margin: 0 auto;
+                a {
+                    font-size: 1.3rem;
+                    letter-spacing: 3px;
+
+                }
+            }
+        }
+        .about-item-img {
+            margin: 0 auto;
+            width: 80%;
+            img {
+                box-shadow: none;
+            }
+        }
+
+    }
+    }
+    
+
+    .about-item-img img {
+        box-shadow: none;
     }
 }
 
