@@ -86,9 +86,12 @@
             border: 5px solid $accent;
             .about-item-img {
                 margin: 0 auto;
-                // align-self: flex-end;
                 width: 80%;
                 padding-top: 10%;
+               
+            }
+            .about-item-img img {
+                // border-radius: 10px;
             }
             .about-item {
                 padding: 30px;
@@ -101,7 +104,7 @@
                     padding-bottom: 30px;
                 }
                 p {
-                    // text-align: center;
+                    text-align: center;
                     font-size: 1.4rem;
                     line-height: 1.4rem;
                 }
@@ -160,6 +163,7 @@
 
     .about-item-img img {
         box-shadow: none;
+        border-radius: 10px;
     }
 }
 

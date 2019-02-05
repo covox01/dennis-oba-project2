@@ -247,9 +247,13 @@ img {
   text-transform: capitalize;
   background: #bf2603;
   padding: 10px 40px;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  border-radius: 3px; }
+
+.button a:hover {
+  background: #8d1c02; }
 
 main {
   grid-row: 1/10;
@@ -326,12 +330,25 @@ header {
   display: none;
   color: white;
   font-size: 1rem;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
+  padding: 0; }
+  .hamburger a {
+    padding: 5px 10px;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .hamburger a i {
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
 
-.hamburger:hover {
-  color: #ff8327; }
+.hamburger a:hover {
+  color: #ff8327;
+  height: 500px; }
 
 @media (max-width: 750px) {
   .header-nav {
@@ -538,9 +555,7 @@ header {
 
 @media (max-width: 500px) {
   .about-1 .container {
-    width: 100%; }
-    .about-1 .container p {
-      text-align: left; } }
+    width: 100%; } }
 
 .about-2-a {
   grid-column: 1/5;
@@ -637,6 +652,7 @@ header {
           justify-content: flex-start;
           padding-bottom: 30px; }
         .about-2-a .about-section-1 .about-item p {
+          text-align: center;
           font-size: 1.4rem;
           line-height: 1.4rem; }
         .about-2-a .about-section-1 .about-item .button {
@@ -679,7 +695,8 @@ header {
           box-shadow: none; }
   .about-item-img img {
     -webkit-box-shadow: none;
-    box-shadow: none; } }
+    box-shadow: none;
+    border-radius: 10px; } }
 
 @media (max-width: 500px) {
   .about-item .button a,
@@ -812,9 +829,12 @@ header {
 
 .gallery-item {
   margin: 0 2%;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.gallery-item:hover {
+  opacity: .5; }
 
 .gallery-item:first-child {
   margin-left: 0; }

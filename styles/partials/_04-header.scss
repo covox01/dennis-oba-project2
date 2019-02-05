@@ -53,29 +53,8 @@ header {
         .header-bg {
             display: none;
         }
-        // display: block;
-        // grid-template-rows: 100px 
-        //                     160px 
-        //                     50px 
-        //                     190px
-        //                     250px
-        //                     80px
-        //                     100px;
     }
 }
-
-// @media (max-width: 350px) {
-//     header {
-//         grid-template-rows: 100px 
-//                             200px 
-//                             50px 
-//                             190px
-//                             250px
-//                             80px
-//                             100px;
-//     }
-    
-// }
 
 .header-bg {
     grid-row: 1/6;
@@ -112,18 +91,27 @@ header {
     grid-column: 1/9;
     width: 750px;
     margin: 0 auto;
-    // border: 1px solid red;
 }
 
 .hamburger {
     display: none;
     color: white;
     font-size: 1rem;
-    transition: all 1s ease;
+    padding: 0;
+    a {
+        padding: 5px 10px;
+        transition: all 1s ease;
+        justify-content: flex-end;
+        i {
+            align-self: flex-end;
+            justify-content: flex-end;
+        }
+    }
 }
 
-.hamburger:hover {
+.hamburger a:hover {
     color: $accent;
+    height: 500px;
 }
 
 @media (max-width: 750px) {

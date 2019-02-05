@@ -88,7 +88,12 @@ img {
     text-transform: capitalize;
     background: $accent-2;
     padding: 10px 40px;
-    transition: all 1s ease;
+    transition: all .3s ease;
+    border-radius: 3px;
+}
+
+.button a:hover {
+    background: darken($accent-2, 10);
 }
 
 main {
