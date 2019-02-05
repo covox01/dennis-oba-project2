@@ -26,23 +26,19 @@
 
 @media (max-width: 1200px) {
     section.events {
-        padding-top: 0;
         position: relative;
+        padding: 10% 0;
+        transition: all 1s ease;
     }
     .events .container {
         flex-flow: column;
-        border: 7px solid $accent;
-        padding-top: 0;
-         position: absolute;
-        top: 0;
-        right: 0;
+        border: 5px solid $accent;
         article.events-item {
             background: rgba(17, 16, 16, .5);
-            margin: 5% auto 10%;
+            margin: 5% auto;
             text-align: center;
             width: 80%;
-            padding: 10%;
-            // border: 7px solid $accent;
+            padding: 5%;
         }
     }
 
@@ -51,5 +47,28 @@
         margin: 0 auto;
         box-shadow: none;
         display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    section.events {
+        padding: 20% 0;
+    }
+    article.events-item {
+        h2 {
+
+        }
+        p {
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+        }
+        .button {
+            margin: 0 auto;
+            a {
+                font-size: 1.2rem;
+                letter-spacing: 3px;
+            }
+
+        }
     }
 }

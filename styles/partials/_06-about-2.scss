@@ -36,8 +36,6 @@
         }
 }
 
-   
-
 .about-2-b {
     grid-column: 7/11;
     grid-row: 8/12;
@@ -46,7 +44,7 @@
 
 .about-section-2 {
     background: $background;
-    padding-bottom: 10%;
+    // padding: 10% 0;
     .about-item-2 {
         width: 80%;
         h2 {
@@ -62,11 +60,15 @@
             text-align: center;
         }
     }
+    .about-item-img {
+        padding: 10% 0 8%;
+    }
     .about-item-img img {
         box-shadow: -10px 10px $accent;
-        margin-top: 10%;
+        // margin-top: 10%;
         width: 100%;
         align-self: center;
+        margin-bottom: 0;
     }
 }
 
@@ -80,15 +82,16 @@
         padding: 5%;
         .about-section-1 {
             align-items: flex-start;;
-            padding: 3% 0 5%;
-            border: 7px solid $accent;
+            padding: 0 0 5%;
+            border: 5px solid $accent;
             .about-item-img {
                 margin: 0 auto;
+                // align-self: flex-end;
                 width: 80%;
                 padding-top: 10%;
             }
             .about-item {
-                padding: 5%;
+                padding: 30px;
                 padding-top: 0;
                 align-items: flex-start;
                 margin: 0 auto;
@@ -118,9 +121,9 @@
     .about-2-b {
         padding: 5%;
         .about-section-2 {
-        flex-direction: column-reverse;
-        border: 7px solid $accent;
-        padding: 5% 0 5%;
+            flex-direction: column-reverse;
+            border: 5px solid $accent;
+            padding: 3% 0 5%;
         .about-item-2 {
             padding: 30px;
             margin: 0 auto;
@@ -131,7 +134,6 @@
             }
             p {
                 margin: 0 auto;
-                // text-align: center;
                 font-size: 1.4rem;
                 line-height: 1.4rem;
             }
@@ -153,11 +155,18 @@
         }
 
     }
-    }
+}
     
 
     .about-item-img img {
         box-shadow: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-item .button a,
+    .about-item-2 .button a, {
+        font-size: 1.2rem;
     }
 }
 

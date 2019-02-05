@@ -246,7 +246,10 @@ img {
   letter-spacing: 1px;
   text-transform: capitalize;
   background: #bf2603;
-  padding: 5px 40px; }
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 main {
   grid-row: 1/10;
@@ -581,8 +584,7 @@ header {
   z-index: 20; }
 
 .about-section-2 {
-  background: #220303;
-  padding-bottom: 10%; }
+  background: #220303; }
   .about-section-2 .about-item-2 {
     width: 80%; }
     .about-section-2 .about-item-2 h2 {
@@ -595,13 +597,15 @@ header {
       line-height: 1.8rem;
       padding-bottom: 50px;
       text-align: center; }
+  .about-section-2 .about-item-img {
+    padding: 10% 0 8%; }
   .about-section-2 .about-item-img img {
     -webkit-box-shadow: -10px 10px #ff8327;
     box-shadow: -10px 10px #ff8327;
-    margin-top: 10%;
     width: 100%;
     -ms-flex-item-align: center;
-    align-self: center; }
+    align-self: center;
+    margin-bottom: 0; }
 
 @media (max-width: 1000px) {
   .about-2-bg {
@@ -613,14 +617,14 @@ header {
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start;
-      padding: 3% 0 5%;
-      border: 7px solid #ff8327; }
+      padding: 0 0 5%;
+      border: 5px solid #ff8327; }
       .about-2-a .about-section-1 .about-item-img {
         margin: 0 auto;
         width: 80%;
         padding-top: 10%; }
       .about-2-a .about-section-1 .about-item {
-        padding: 5%;
+        padding: 30px;
         padding-top: 0;
         -webkit-box-align: start;
         -ms-flex-align: start;
@@ -649,8 +653,8 @@ header {
       -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
       flex-direction: column-reverse;
-      border: 7px solid #ff8327;
-      padding: 5% 0 5%; }
+      border: 5px solid #ff8327;
+      padding: 3% 0 5%; }
       .about-2-b .about-section-2 .about-item-2 {
         padding: 30px;
         margin: 0 auto; }
@@ -676,6 +680,11 @@ header {
   .about-item-img img {
     -webkit-box-shadow: none;
     box-shadow: none; } }
+
+@media (max-width: 500px) {
+  .about-item .button a,
+  .about-item-2 .button a {
+    font-size: 1.2rem; } }
 
 .party-inquiry {
   grid-row: 12/14;
@@ -758,30 +767,41 @@ header {
 
 @media (max-width: 1200px) {
   section.events {
-    padding-top: 0;
-    position: relative; }
+    position: relative;
+    padding: 10% 0;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .events .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
     flex-flow: column;
-    border: 7px solid #ff8327;
-    padding-top: 0;
-    position: absolute;
-    top: 0;
-    right: 0; }
+    border: 5px solid #ff8327; }
     .events .container article.events-item {
       background: rgba(17, 16, 16, 0.5);
-      margin: 5% auto 10%;
+      margin: 5% auto;
       text-align: center;
       width: 80%;
-      padding: 10%; }
+      padding: 5%; }
   .events-img img {
     width: 40%;
     margin: 0 auto;
     -webkit-box-shadow: none;
     box-shadow: none;
     display: none; } }
+
+@media (max-width: 800px) {
+  section.events {
+    padding: 20% 0; }
+  article.events-item p {
+    font-size: 1.4rem;
+    line-height: 1.4rem; }
+  article.events-item .button {
+    margin: 0 auto; }
+    article.events-item .button a {
+      font-size: 1.2rem;
+      letter-spacing: 3px; } }
 
 .gallery {
   grid-column: 1/12;
@@ -791,10 +811,35 @@ header {
   background: #220303; }
 
 .gallery-item {
-  margin: 0 2%; }
+  margin: 0 2%;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.gallery-item:first-child {
+  margin-left: 0; }
+
+.gallery-item:last-child {
+  margin-right: 0; }
 
 .gallery-item img {
   width: 100%; }
+
+@media (max-width: 650px) {
+  .gallery {
+    background: #111010;
+    padding-top: 0; }
+  .gallery .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column; }
+    .gallery .flex .gallery-item {
+      margin: 0 0 8%; }
+  .gallery .container {
+    width: 84%; }
+  .gallery .gallery-item a {
+    width: 100%; } }
 
 footer {
   font-family: "Chathura", sans-serif;
