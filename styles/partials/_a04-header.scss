@@ -1,25 +1,8 @@
 .super-grid {
     display: grid;
-    grid-template-columns: 12.5%
-                           12.5%
-                           12.5%
-                           6.25%
-                           6.25%
-                           6.25%
-                           6.25%
-                           12.5%
-                           12.5%
-                           12.5%;
+    grid-template-columns: 12.5% 12.5% 12.5% 6.25% 6.25% 6.25% 6.25% 12.5% 12.5% 12.5%;
 
-    grid-template-rows: 700px
-                        200px
-                        350px
-                        70px
-                        30px
-                        70px
-                        40px
-                        250px
-                        2470px;
+    grid-template-rows: 700px 200px 350px 70px 30px 70px 40px 250px 2470px;
 }
 
 @media (max-width: 1000px) {
@@ -28,7 +11,7 @@
     }
 }
 
-header {
+header.main-header {
     grid-row: 1/2;
     grid-column: 1/11;
     z-index: 10;
@@ -44,7 +27,7 @@ header {
 }
 
 @media (max-width: 1000px) {
-    header {
+    header.main-header {
         background: url(../assets/home-about/home-image-1.jpg);
         background-size: cover;
         background-position: center;
@@ -179,7 +162,7 @@ header {
         grid-column: 8/12;
         display: block;
         padding: 15px;
-        z-index: 1000;
+        z-index: 1000000;
     }
 }
 
@@ -219,7 +202,6 @@ header {
     grid-column: 2/8;
     width: 100%;
     .main-title-item {
-        z-index: 1;
         font-family: $big-font;
         font-size: 13rem;
         font-weight: 500;

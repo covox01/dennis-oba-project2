@@ -1,10 +1,10 @@
 .blog-comments {
-    grid-row: 9;
+    grid-row: 4;
     grid-column: 1/2;
     width: 80%;
     margin: 0 auto;
-    padding: 40px 0 0 0;
-    border: 1px solid red;
+    padding: 0;
+    // border: 1px solid red;
     .blog-comment-section {
         padding: 20px 0;
         a {
@@ -29,7 +29,6 @@
 }
 
 @media (max-width: 750px) {
-   
     .blog-comment-section {
         margin: 0 auto;
         flex-flow: column;
@@ -40,5 +39,11 @@
 
     .blog-comments .blog-comment-item {
         width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .blog-wrap article .blog-item {
+        padding: 20px 0;
     }
 }
