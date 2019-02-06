@@ -145,13 +145,29 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black; }
+
+.skip-link:focus {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  width: 25%;
+  left: 0;
+  right: 0;
+  top: 0; }
+
 * {
   padding: 0;
   margin: 0; }
 
 body {
   margin: 0 auto;
-  max-width: 1600px;
   background: #111010; }
 
 html {
@@ -172,7 +188,8 @@ h3 {
   font-size: 1.2rem; }
 
 p {
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-size: 1.4rem; }
 
 li {
   list-style: none; }
@@ -288,31 +305,10 @@ img {
 .submit-button button:focus {
   border: 1px dotted #ff8327; }
 
-.skip-link {
-  position: absolute;
-  left: -1000px;
-  top: 5px;
-  z-index: 999;
-  background: white;
-  color: black; }
-
-.skip-link:focus {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 0 auto;
-  width: 25%;
-  left: 0;
-  right: 0;
-  top: 0; }
-
 .super-grid {
   display: grid;
   grid-template-columns: 12.5% 12.5% 12.5% 6.25% 6.25% 6.25% 6.25% 12.5% 12.5% 12.5%;
   grid-template-rows: 700px 200px 350px 70px 30px 70px 40px 250px 2470px; }
-
-@media (max-width: 1000px) {
-  .super-grid {
-    display: block; } }
 
 main {
   grid-row: 1/10;
@@ -320,11 +316,6 @@ main {
   display: grid;
   grid-template-columns: 12.5% 12.5% 12.5% 6.25% 6.25% 6.25% 6.25% 12.5% 12.5% 12.5%;
   grid-template-rows: 700px 200px 350px 70px 30px 70px 40px 250px 300px 100px 50px 100px 400px 200px 200px; }
-
-@media (max-width: 1000px) {
-  main {
-    display: block;
-    z-index: 100; } }
 
 header.main-header {
   grid-row: 1/2;
@@ -335,6 +326,11 @@ header.main-header {
   grid-template-rows: 100px 200px 50px 100px 250px 80px 100px; }
 
 @media (max-width: 1000px) {
+  .super-grid {
+    display: block; }
+  main {
+    display: block;
+    z-index: 100; }
   header.main-header {
     background: url(../assets/home-about/home-image-1.jpg);
     background-size: cover;
@@ -372,15 +368,11 @@ header.main-header {
     opacity: 0; } }
 
 .header-nav {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   grid-row: 1/2;
   grid-column: 1/9;
   width: 750px;
   margin: 0 auto;
-  padding-top: 2.5%;
-  height: 150px; }
+  padding-top: 2.5%; }
 
 .hamburger {
   display: none;
@@ -404,32 +396,26 @@ header.main-header {
       justify-content: flex-end; }
 
 .ham-nav {
-  background: black;
+  height: 255px;
   position: absolute;
   top: -300px;
   right: 0;
   bottom: 0;
   left: 0;
-  height: 255px;
+  background: black;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
   flex-flow: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease; }
   .ham-nav .nav-item {
-    background: black;
-    padding: 0;
-    text-align: center;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%; }
+    height: 100%;
+    padding: 0;
+    background: black;
+    text-align: center; }
     .ham-nav .nav-item a {
       height: 100%;
       width: 100%;
@@ -464,7 +450,7 @@ header.main-header {
     grid-column: 8/12;
     display: block;
     padding: 15px;
-    z-index: 1000000; } }
+    z-index: 20; } }
 
 .nav-item {
   font-family: "Chathura", sans-serif;
@@ -566,8 +552,6 @@ header.main-header {
     padding-top: 2%;
     padding-bottom: 2%; }
     .about-section .about-item h2 {
-      font-size: 2.4rem;
-      font-weight: 700px;
       padding-top: 20px;
       padding-bottom: 20px;
       -webkit-transition: all 1s ease;
@@ -592,12 +576,12 @@ header.main-header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: white;
-  font-size: 1.2rem;
-  background: #bf2603;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  color: white;
+  background: #bf2603;
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
@@ -611,6 +595,8 @@ header.main-header {
     align-items: center; }
 
 @media (max-width: 1000px) {
+  .about-1-bg-color {
+    display: none; }
   .about-1 {
     padding: 10% 0;
     -webkit-box-align: center;
@@ -626,9 +612,7 @@ header.main-header {
       font-size: 2.2rem; }
     .about-section .about-item p {
       font-size: 1.4rem;
-      padding: 0; }
-  .about-1-bg-color {
-    display: none; } }
+      padding: 0; } }
 
 @media (max-width: 800px) {
   .about-section {
@@ -692,7 +676,7 @@ header.main-header {
     font-size: 1.7rem;
     line-height: 1.8rem;
     padding-bottom: 50px;
-    text-align: center; }
+    text-align: right; }
 
 .about-2-b {
   grid-column: 7/11;
@@ -712,7 +696,7 @@ header.main-header {
       font-size: 1.7rem;
       line-height: 1.8rem;
       padding-bottom: 50px;
-      text-align: center; }
+      text-align: left; }
   .about-section-2 .about-item-img {
     padding: 10% 0 8%; }
   .about-section-2 .about-item-img img {
@@ -792,7 +776,8 @@ header.main-header {
         .about-2-b .about-section-2 .about-item-2 p {
           margin: 0 auto;
           font-size: 1.4rem;
-          line-height: 1.4rem; }
+          line-height: 1.4rem;
+          text-align: center; }
         .about-2-b .about-section-2 .about-item-2 .button {
           margin: 0 auto; }
           .about-2-b .about-section-2 .about-item-2 .button a {
@@ -859,7 +844,8 @@ header.main-header {
       padding-bottom: 5%;
       line-height: 1.8rem;
       text-align: center;
-      margin: 0 auto; }
+      margin: 0 auto;
+      text-transform: capitalize; }
     .party-inquiry p {
       margin: 0 auto;
       font-size: 1.5rem;
@@ -1052,7 +1038,7 @@ aside {
   grid-row: 5/6;
   display: grid;
   grid-template-columns: 20% 75% 5%;
-  grid-template-rows: 20px  400px 20px 200px 200px;
+  grid-template-rows: 20px 400px 20px 200px 200px;
   width: 400px;
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -1077,7 +1063,8 @@ aside {
   .side-item-1 h2 {
     font-size: 2.4rem;
     letter-spacing: 1px;
-    padding: 0 0 7px 0; }
+    padding: 0 0 7px 0;
+    text-transform: capitalize; }
   .side-item-1 p {
     margin: 0 auto;
     font-size: 1.3rem;
@@ -1122,7 +1109,7 @@ aside {
 @media (max-width: 1200px) {
   aside {
     width: 300px;
-    grid-template-rows: 20px  270px 20px 210px 210px; }
+    grid-template-rows: 20px 270px 20px 210px 210px; }
   .side-item-1 p {
     font-size: 1.2rem; }
   .side-item-2 ul {
