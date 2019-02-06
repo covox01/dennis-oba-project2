@@ -1249,32 +1249,32 @@ aside {
   height: 900px; }
 
 .submit-form {
+  height: 400px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 1px solid red; }
   .submit-form fieldset {
-    height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 200px;
     padding: 0;
-    border: 1px solid blue;
     border: none; }
 
-.form-item div {
-  width: calc((100% - 50px) / 2); }
-  .form-item div label {
-    color: white;
-    font-size: 1.4rem;
-    padding-left: 20px;
-    padding-bottom: 20px; }
-  .form-item div input {
-    width: 100%;
-    background: #111010;
-    border: none;
-    border-bottom: 1px solid #ff8327;
-    height: 25px; }
-  .form-item div input:focus {
-    background: white; }
+.form-item {
+  padding-bottom: 20px; }
+  .form-item div {
+    width: calc((100% - 50px) / 2); }
+    .form-item div label {
+      color: white;
+      font-size: 1.4rem;
+      padding-left: 20px;
+      padding-bottom: 20px; }
+    .form-item div input {
+      width: 100%;
+      background: #111010;
+      border: none;
+      border-bottom: 1px solid #ff8327;
+      height: 25px; }
+    .form-item div input:focus {
+      background: white; }
 
 textarea {
   background: #111010;

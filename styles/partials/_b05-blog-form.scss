@@ -3,18 +3,19 @@
 }
 
 .submit-form {
+    height: 400px;
     width: 100%;
     margin: 0 auto;
+    border: 1px solid red;
     fieldset {
-        height: 400px;
-        display: flex;
+        height: 200px;
         padding: 0;
-        border: 1px solid blue;
         border: none;
     }
 }
 
 .form-item {
+    padding-bottom: 20px;
     div {
         width: calc((100% - 50px) / 2);
         label {
