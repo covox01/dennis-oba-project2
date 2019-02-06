@@ -1211,7 +1211,8 @@ aside {
   grid-column: 1/2;
   width: 80%;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  border: 1px solid red; }
   .blog-comments .blog-comment-section {
     padding: 20px 0; }
     .blog-comments .blog-comment-section a {
@@ -1249,10 +1250,8 @@ aside {
   height: 900px; }
 
 .submit-form {
-  height: 400px;
   width: 100%;
-  margin: 0 auto;
-  border: 1px solid red; }
+  margin: 30% auto 0; }
   .submit-form fieldset {
     height: 200px;
     padding: 0;
