@@ -88,13 +88,12 @@
             border-radius: 10px 0 0 0;
             box-shadow: 10px 15px $accent;
             .about-item-img {
-                margin: 0 auto;
                 width: 80%;
+                margin: 0 auto;
                 padding-top: 10%;
-               
-            }
-            .about-item-img img {
-                box-shadow: 1px 1px $accent;
+                img {
+                    box-shadow: 1px 1px $accent;
+                }
             }
             .about-item {
                 padding: 30px;
