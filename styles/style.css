@@ -1259,14 +1259,14 @@ aside {
     border: none; }
 
 .form-item {
-  padding-bottom: 30px; }
+  padding-bottom: 20px; }
   .form-item div {
     width: calc((100% - 50px) / 2); }
     .form-item div label {
       color: white;
       font-size: 1.4rem;
       padding-left: 20px;
-      padding-bottom: 10px; }
+      padding-bottom: 5px; }
     .form-item div input {
       width: 100%;
       background: #111010;
