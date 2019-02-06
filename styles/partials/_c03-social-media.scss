@@ -1,0 +1,46 @@
+.contact {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    width: 100%;
+    padding: 3%;
+    .contact-item-1 {
+        font-size: 1.4rem;
+        font-family: $main-font;
+        letter-spacing: 3px;
+        color: white;
+        width: 140px;
+        .social-icons {
+            font-size: 1rem;
+            width: 25%;
+            text-align: center;
+        }
+        .social-icons a {
+            padding: 5px;
+
+            transition: all .3s ease;
+        }
+        .social-icons:hover a{
+            color: $accent;
+        }
+    }
+    .contact-item-2 {
+        font-size: 1.4rem;
+        ul li {
+            line-height: 1.4rem;
+            word-spacing: 4px;
+            letter-spacing: 2.5px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact {
+        grid-row: 8/9;
+        grid-column: 1/14;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .contact-item-1 {
+        margin: 0 auto;
+    }
+}

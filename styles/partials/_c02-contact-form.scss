@@ -1,0 +1,59 @@
+.contact-main {
+    grid-row: 4/7;
+    grid-column: 5/12;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    .submit-form {
+        width: 100%;
+        background: $background;
+        padding: 3% 10%;
+        box-shadow: 10px 10px $accent;
+        fieldset {
+            border: none;
+        }
+    }
+    .form-item div input {
+        background: $background;
+        border-bottom: 1px solid white;
+    }
+    .form-item div input:focus {
+        background: white;
+    }
+    .submit-button button:focus {
+        border: 1px solid white;
+    }
+    .submit-button button:hover {
+        background: darken($accent-2, 10);
+    }
+}
+
+.contact-form {
+    background: $background;
+    border: 1px solid white;
+}
+
+@media (max-width: 1000px) {
+    .contact-main {
+        grid-row: 4/7;
+        grid-column: 2/11;
+    }
+    .form-item div label {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-main {
+        grid-row: 4/7;
+        grid-column: 1/14;
+        width: 90%;
+    }
+    .contact-main .submit-form {
+        box-shadow: 0px 10px $accent;
+        border: 1px solid $accent;
+        padding: 15px;
+    }   
+}
+
+

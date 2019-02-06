@@ -11,11 +11,22 @@
     <title>Bar-One Contact</title>
 </head>
 <body>
+    <a href="#maincontent" class="skip-link">Skip to main content.</a>
+    <div class="contact-super-grid">
 
-    <!------------------ Header Starts ------------------>
-
-    <header class="contact">
-        <div class="main-grid">
+        <!------------------ Header Starts ------------------>
+        <div class="contact-bg"></div>
+        <header class="contact-header">
+            <div class="hamburger">
+                <a href="#"><i class="fas fa-bars"></i></a>
+                <ul class="ham-nav flex spc-btw aln-center">
+                    <li class="nav-item"><a href="index.html">home</a></li>
+                    <li class="nav-item"><a href="index.html">about</a></li>
+                    <li class="logo"><a href="index.html">Bar-One</a></li>
+                    <li class="nav-item"><a href="blog.html">blog</a></li>
+                    <li class="nav-item"><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
             <nav class="header-nav">
                 <ul class="flex spc-btw aln-center">
                     <li class="nav-item"><a href="index.html">home</a></li>
@@ -25,62 +36,72 @@
                     <li class="nav-item"><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
-            <div class="main-title flx-col sub-grid">
-                <div class="main-title-item flx-col">
-                    Bar-One
-                    <span>Place to be</span>
-                </div>
-                <div class="grid-item bg-img"></div>
-            </div>
-        </div>
-    </header>
+        </header>
+        <h1 class="contact-heading">Get in Touch</h1>
 
-    <!------------------ Header Ends ------------------>
+        <!------------------ Header Ends ------------------>
 
-    <!------------------ Main Contact Starts ------------------>
+        <!------------------ Main Contact Starts ------------------>
     
-    <main>
-        <h1>Get in Touch</h1>
-        <form action="#">
-            <fieldset>
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div>
-                    <label for="email">Email Address</label>
-                    <input type="text" name="email" id="email">
-                </div>
-                <label for="comment-area" class="visually-hidden"></label>
-                <input type="textarea" name="textarea" id="comment-area">
-                <div class="blog-button">
-                    <button>post comment</button>
-                </div>
-            </fieldset>
-        </form>
-    </main>
+        <main class="contact-main" id="main-content">
+            <form action="#" class="submit-form">
+                <fieldset class="flex flx-col spc-around">
+                    <div class="form-item flex spc-btw">
+                        <div class="flx-col spc-btw">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="contact-input">
+                        </div>
+                        <div class="flx-col">
+                            <label for="email">Email Address</label>
+                            <input type="text" name="email" id="email" class="contact-input">
+                        </div>
+                    </div>
+                    <label for="comment-area" class="visually-hidden"></label>
+                    <div class="flx-col">
+                        <textarea type="text" name="textarea" id="comment-area" class="text-area contact-form" rows="8" cols="5" resize="none" ;
+                            placeholder="Comment"></textarea>
+                        <div class="submit-button">
+                            <button>submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    
 
         <!------------------ Main Contact Ends ------------------>
 
         <!------------------ Sidebar Starts ------------------>
 
-        <aside class="contact">
-            <ul class="contact-item-1 flex">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-            <span>info@email.com</span>
+        <aside class="contact flx-col">
+            <div class="contact-item-1">
+                <ul class="flex spc-btw">
+                    <li class="social-icons flex">
+                        <a href="#" aria-label="Goes to Bar One Facebook Page"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="social-icons flex">
+                        <a href="#" aria-label="Goes to Bar One Instagram page"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="social-icons flex">
+                        <a href="#" aria-label="Goes to Bar One Twitter page"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="social-icons flex">
+                        <a href="#" aria-label="Goes to Whatsup contact page"><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+                <div>info@email.com</div>
+            </div>
             <div class="contact-item-2 flx-col spc-btw">
-                <span>info@email.com</span>
-                <span>123 - 456 -7890</span>
-                <span>123 Queen Street West, Unit</span>
-                <span>Unit 10</span>
-                <span>Toronto, Ontario</span>
-                <span>M5V2D5</span>
+                <ul class="flex flx-col">
+                    <li>123 - 456 -7890</li>
+                    <li>123 Queen Street West</li>
+                    <li>Unit 10</li>
+                    <li>Toronto, Ontario</li>
+                    <li>M5V2D5</li>
+                </ul>
             </div>
         </aside>
-
+    </div>
         <!------------------ Sidebar Ends ------------------>
 
     <!------------------ Footer Starts ------------------>

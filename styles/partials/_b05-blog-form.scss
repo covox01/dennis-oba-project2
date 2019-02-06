@@ -2,7 +2,7 @@
     height: 900px;
 }
 
-.blog-form {
+.submit-form {
     width: 100%;
     margin: 0 auto;
     fieldset {
@@ -36,7 +36,7 @@
     }
 }
 
- textarea {
+textarea {
     background: $background-2;
     border: 1px solid $accent;
     margin-bottom: 3%;
@@ -45,6 +45,7 @@
 
 textarea:focus {
     background: white;
+    border: 1px solid $accent-2;
 }
 
 textarea::placeholder {
@@ -56,17 +57,3 @@ textarea::placeholder {
     position: relative;
 }
 
-.text-area::placeholder:focus {
-
-}
-
-.blog-button button {
-    width: 100%;
-    background: $accent-2;
-    border: none;
-    padding: 15px 0;
-    text-transform: capitalize;
-    color: white;
-    font-family: $big-font;
-    letter-spacing: 2px;
-}

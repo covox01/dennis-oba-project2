@@ -19,7 +19,7 @@
     grid-column: 1/6;
 }
 
-h1.heading {
+.blog-heading {
     grid-row: 2/3;
     grid-column: 1/2;
     font-size: 5rem;
@@ -32,7 +32,7 @@ h1.heading {
     .blog-header {
         height: 100vh;
     }
-    h1.heading {
+    h1.blog-heading {
         grid-row: 1/2;
         grid-column: 2/4;
         align-self: flex-end;

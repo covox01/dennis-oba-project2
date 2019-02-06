@@ -11,6 +11,7 @@
     <title>Bar-One Blog</title>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content.</a>
     <div class="blog-super-grid flex">
 
         <!------------------ Header Starts ------------------>
@@ -37,7 +38,7 @@
                 </ul>
             </nav>
         </header>
-        <h1 class="heading">Blog</h1>
+        <h1 class="blog-heading">Blog</h1>
 
         <!------------------ Header Ends ------------------>
 
@@ -67,7 +68,7 @@
 
         <!------------------ Main Starts ------------------>
 
-        <main class="blog-content">
+        <main class="blog-content" id="main-content">
 
             <!------------------ Article Starts ------------------>
 
@@ -116,7 +117,7 @@
                         laudantium ullam, quod repellendus provident quas, nesciunt quidem quisquam blanditiis.!</p>
                     </div>
                 </div>
-                <form action="#" class="blog-form">
+                <form action="#" class="submit-form">
                     <fieldset class="flex flx-col spc-around">
                         <div class="form-item flex spc-btw">
                             <div class="flx-col spc-btw">
@@ -131,8 +132,8 @@
                         <label for="comment-area" class="visually-hidden"></label>
                         <div class="flx-col">
                             <textarea type="text" name="textarea" id="comment-area" class="text-area" rows="8" cols="5" resize="none"; placeholder="Comment"></textarea>
-                            <div class="blog-button">
-                                <button>post comment</button>
+                            <div class="submit-button">
+                                <button class="submit-button">post comment</button>
                             </div>
                         </div>
                     </fieldset>
@@ -147,7 +148,7 @@
 
     <!------------------ Footer Starts ------------------>
 
-    <footer>
+    <footer class="contact-footer">
         <span>Copyright &copy; 2019 HackerYou</span>
     </footer>
 </body>
