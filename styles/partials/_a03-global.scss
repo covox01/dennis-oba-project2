@@ -17,10 +17,19 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, a, p {
+h1, h2, h3, a, p, label {
     color: white;
     font-family: $main-font;
     line-height: 1rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-family: $main-font;
+}
+
+h3 {
+    font-size: 1.2rem;
 }
 
 p {
@@ -58,6 +67,11 @@ img {
 .flx-wrap {
     display: flex;
     flex-wrap: wrap;
+}
+
+.jst-center {
+    display: flex;
+    justify-content: center;
 }
 
 .spc-btw {

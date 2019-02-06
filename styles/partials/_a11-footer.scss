@@ -1,9 +1,10 @@
 footer {
     font-family: $main-font;
-    font-size: 2rem;
-    background: $background-2;
+    font-size: 1.4rem;
+    background: lighten($background-2, 20);
     text-align: center;
     letter-spacing: 2px;
+    line-height: 2rem;
     width: 100%;
     color: white;
 }

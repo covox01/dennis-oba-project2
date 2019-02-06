@@ -1,0 +1,101 @@
+.blog-content {
+    grid-row: 3/5;
+    grid-column: 3/8;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 950px 500px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transition: all 1s
+}
+
+.blog-sub-grid {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1% 98% 1%;
+    grid-template-rows: 20px 550px 10px 800px 10px;
+    width: 100%;
+    .blog-bg-color {
+        grid-column: 1/3;
+        grid-row: 2/6;
+        background: $accent;
+    }
+    .blog-wrap {
+        grid-column: 2/4;
+        grid-row: 1/5;
+        height: 100%;
+        img {
+            grid-column: 2/4;
+            grid-row: 1/3;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        article {
+            background: $background-2;
+            padding: 130px 10%;
+            // margin: 1% 0 0;
+            height: 100%;
+            p {
+                font-size: 1.4rem;
+                line-height: 1.3rem;
+                letter-spacing: 2px;
+            }
+        }
+        .date {  
+            h2 {
+                font-size: 2.4rem;
+                padding: 10px 0;
+                text-transform: capitalize;
+            }
+            h3 {
+                font-size: 1.4rem;
+                color: $accent;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .blog-bg-color {
+        display: none;
+    }
+    .blog-content {
+        grid-row: 3/5;
+        grid-column: 2 / 6;
+        width: 85%;
+        .blog-wrap {
+            background: $accent;
+            width: 100%;
+            padding: 5px;
+        }
+        .blog-wrap img {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .blog-content .blog-sub-grid {
+        display: grid;
+        grid-template-rows: 20px 550px 10px 700px 10px;
+    }
+    .blog-content {
+        grid-row: 3/5;
+        grid-column: 1/6;
+        width: 100%;
+        .blog-wrap {
+            grid-column: 1/4;
+            background: none;
+            padding: 0;
+        }
+    }
+}
+
+
+
+
+
+
+

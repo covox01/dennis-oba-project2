@@ -1,0 +1,44 @@
+.blog-comments {
+    grid-row: 9;
+    grid-column: 1/2;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    border: 1px solid red;
+    .blog-comment-section {
+        padding: 20px 0;
+        a {
+            width: 25%;
+            padding-left: 0; 
+        }
+    }
+    .blog-comment-item {
+        width: 75%;
+        h3 {
+            font-size: 1.4rem;
+            padding-bottom: 3%;
+            letter-spacing: 1px;
+            color: $accent;
+            line-height: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+   
+    .blog-comment-section {
+        margin: 0 auto;
+        flex-flow: column;
+        .blog-img {
+            padding-bottom: 20px;
+        }
+    }
+
+    .blog-comments .blog-comment-item {
+        width: 100%;
+    }
+}

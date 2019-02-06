@@ -11,23 +11,33 @@
     <title>Bar-One Blog</title>
 </head>
 <body>
-    <div class="blog-super-grid">
+    <div class="blog-super-grid flex">
 
         <!------------------ Header Starts ------------------>
 
         <div class="blog-bg"></div>
-        <header>
+        <header id="blog" class="blog-header">
+            <div class="hamburger">
+                <a href="#"><i class="fas fa-bars"></i></a>
+                <ul class="ham-nav flex spc-btw aln-center">
+                    <li class="nav-item"><a href="index.html">home</a></li>
+                    <li class="nav-item"><a href="#about-1">about</a></li>
+                    <li class="logo"><a href="#home">Bar-One</a></li>
+                    <li class="nav-item"><a href="blog.html">blog</a></li>
+                    <li class="nav-item"><a href="#contact">contact</a></li>
+                </ul>
+            </div>
             <nav class="header-nav">
                 <ul class="flex spc-btw aln-center">
-                    <li class="nav-item"><a href="#">home</a></li>
-                    <li class="nav-item"><a href="#">about</a></li>
-                    <li class="logo"><a href="#">Bar-One</a></li>
-                    <li class="nav-item"><a href="#">blog</a></li>
-                    <li class="nav-item"><a href="#">contact</a></li>
+                    <li class="nav-item"><a href="index.html">home</a></li>
+                    <li class="nav-item"><a href="#about-1">about</a></li>
+                    <li class="logo"><a href="#home">Bar-One</a></li>
+                    <li class="nav-item"><a href="blog.html">blog</a></li>
+                    <li class="nav-item"><a href="#contact">contact</a></li>
                 </ul>
             </nav>
-            <h1>blog</h1>
         </header>
+        <h1 class="heading">Blog</h1>
 
         <!------------------ Header Ends ------------------>
 
@@ -37,21 +47,19 @@
             <img src="assets/blog/sidebar-image.jpg" alt="Beer being poured in a glass">
             <div class="aside-bg-color">
             </div>
-            <div class="side-item">
-                <div class="side-item-1">
-                    <h2>Our mission</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab officia aliquid doloribus maiores, dicta placeat?</p>
-                    <a href="#">Find out more.</a>
-                </div>
-                <div class="side-item-2">
-                    <h2>Recent Posts</h2>
-                    <ul>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Cumque tempore voluptatibus</li>
-                        <li>Laudantium libero nisi</li>
-                        <li>Vel recusandae quam ducky</li>
-                    </ul>
-                </div>
+            <div class="side-item-1 flex flx-col">
+                <h2>Our mission</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab officia aliquid doloribus maiores?</p>
+                <a href="#">Find out more.</a>
+            </div>
+            <div class="side-item-2 flex flx-col">
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li><span>Lorem ipsum dolor sit.</span></li>
+                    <li><span>Cumque tempore voluptatibus</span></li>
+                    <li><span>Laudantium libero nisi</span></li>
+                    <li><span>Vel recusandae quam ducky</span></li>
+                </ul>
             </div>
         </aside>
 
@@ -59,79 +67,89 @@
 
         <!------------------ Main Starts ------------------>
 
-        <main>
+        <main class="blog-content">
 
             <!------------------ Article Starts ------------------>
 
-            <section>
+            <section class="blog-sub-grid">
                 <div class="blog-bg-color"></div>
-                <img src="assets/blog/post-image.jpg" alt="plates of restaurant food on a table">
-                <article>
-                    <h2>New menu!</h2>
-                    <h3>Monday January 30, 2019 by Saron</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis eos dolor totam culpa facilis voluptatum cupiditate id aspernatur distinctio! Neque incidunt ipsum iure nobis?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos cumque itaque tenetur repellat, tempore amet ratione nam cum exercitationem natus minima deserunt quam consequatur est sit quasi tempora magni dolorum at!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa dicta optio a atque inventore molestias, corporis minus itaque earum dolorem tenetur accusantium dolore ducimus nostrum, quae ad voluptatum sit quas maxime adipisci sed unde porro? Provident culpa dolore officiis inventore dolor corrupti, deleniti repellendus ullam distinctio laborum qui.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum in corporis amet. Commodi reiciendis fugit soluta!</p>
-                </article>
-                div.blog
+                <div class="blog-wrap flx-col spc-btw">
+                    <img src="assets/blog/post-image.jpg" alt="plates of restaurant food on a table">
+                    <article class="flex">
+                        <div class="blog-item flx-col spc-around">
+                            <div class="date">
+                                <h2>New menu</h2>
+                                <h3>Monday January 30, 2019 by Saron</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis eos dolor totam culpa facilis voluptatum cupiditate id aspernatur distinctio! Neque incidunt ipsum iure nobis?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos cumque itaque tenetur repellat, tempore amet ratione nam cum exercitationem natus minima deserunt quam consequatur est sit quasi tempora magni dolorum at!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa dicta optio a atque inventore molestias, corporis minus itaque earum dolorem tenetur accusantium dolore ducimus nostrum, quae ad voluptatum sit quas maxime adipisci sed unde porro? Provident culpa dolore officiis inventore dolor corrupti, deleniti repellendus ullam distinctio laborum qui.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum in corporis amet. Commodi reiciendis fugit soluta!</p>
+                        </div>
+                    </article>
+                </div>
             </section>
+        
 
             <!------------------ Article Ends ------------------>
 
             <!------------------ Comment Section Starts ------------------>
 
-            <section class="blog-comments">
+            <section class="blog-comments flx-col spc-around">
                 <h2>Comments:</h2>
-                <div class="blog-comment-section-1 ">
-                    <div class="blog-img">
-                        <img src="assets/blog/comment-image-1.jpg" alt="">
-                    </div>
-                    <div class="blog-comment-item-1 flx-col">
+                <div class="blog-comment-section flex">
+                    <a href="#" class="blog-img">
+                        <img src="assets/blog/comment-image-1.jpg" alt="profile of a woman with a white shirt">
+                    </a>
+                    <div class="blog-comment-item flx-col">
                         <h3>Tuesday October 9th, 2019 by Sulaire</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus omnis iure quam animi saepe voluptatem laudantium ullam, quod repellendus provident quas, nesciunt quidem quisquam blanditiis esse perferendis neque ipsa assumenda eveniet vel? Vero, quos nulla!</p>
                     </div>
                 </div>
-                <div class="blog-comment">
-                    <div class="blog-img">
-                        <a href="assets/blog/comment-image-2.jpg"></a>
-                    </div>
-                    <div class="blog-comment-item-1">
+                <div class="blog-comment-section flex">
+                    <a href="#" class="blog-img">
+                        <img src="assets/blog/comment-image-2.jpg" alt="Male with a beard holding hair his hair up">
+                    </a>
+                    <div class="blog-comment-item">
                         <h3>Tuesday October 9th, 2019 by Sulaire</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus omnis iure quam animi saepe voluptatem
                         laudantium ullam, quod repellendus provident quas, nesciunt quidem quisquam blanditiis esse perferendis
                         neque ipsa assumenda eveniet vel? Vero, quos nulla!</p>
                     </div>
                 </div>
-                <form action="#">
-                    <fieldset>
-                        <div>
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name">
-                        </div>
-                        <div>
-                            <label for="email">Email Address</label>
-                            <input type="text" name="email" id="email">
+                <form action="#" class="blog-form">
+                    <fieldset class="flex flx-col spc-around">
+                        <div class="form-item flex spc-btw">
+                            <div class="flx-col spc-btw">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="flx-col">
+                                <label for="email">Email Address</label>
+                                <input type="text" name="email" id="email"> 
+                            </div>
                         </div>
                         <label for="comment-area" class="visually-hidden"></label>
-                        <input type="textarea" name="textarea" id="comment-area">
-                        <div class="blog-button">
-                            <button>post comment</button>
+                        <div class="flx-col">
+                            <textarea type="text" name="textarea" id="comment-area" class="text-area" rows="8" cols="5" resize="none"; placeholder="Comment"></textarea>
+                            <div class="blog-button">
+                                <button>post comment</button>
+                            </div>
                         </div>
                     </fieldset>
                 </form>
             </section>
 
             <!------------------ Comment Section Ends ------------------>
-
         </main>
+        
         <!------------------ Main Ends ------------------>
     </div>
 
     <!------------------ Footer Starts ------------------>
 
     <footer>
-        <span>copyright &copy; 2019 HackerYou</span>
+        <span>Copyright &copy; 2019 HackerYou</span>
     </footer>
 </body>
 </html>

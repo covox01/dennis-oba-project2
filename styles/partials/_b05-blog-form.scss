@@ -1,0 +1,72 @@
+.blog-comments {
+    height: 900px;
+}
+
+.blog-form {
+    width: 100%;
+    margin: 0 auto;
+    fieldset {
+        height: 400px;
+        display: flex;
+        padding: 0;
+        border: 1px solid blue;
+        border: none;
+    }
+}
+
+.form-item {
+    div {
+        width: calc((100% - 50px) / 2);
+        label {
+            color: white;
+            font-size: 1.4rem;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            background: $background-2;
+            border: none;
+            border-bottom: 1px solid $accent;
+            height: 25px;
+        }
+        input:focus {
+            background: white;
+        }
+    }
+}
+
+ textarea {
+    background: $background-2;
+    border: 1px solid $accent;
+    margin-bottom: 3%;
+    resize: none;
+}
+
+textarea:focus {
+    background: white;
+}
+
+textarea::placeholder {
+    color: white;
+    opacity: 1;
+    margin-left: 20px;
+    font-size: 1.4rem;
+    font-family: $main-font;
+    position: relative;
+}
+
+.text-area::placeholder:focus {
+
+}
+
+.blog-button button {
+    width: 100%;
+    background: $accent-2;
+    border: none;
+    padding: 15px 0;
+    text-transform: capitalize;
+    color: white;
+    font-family: $big-font;
+    letter-spacing: 2px;
+}
