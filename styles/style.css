@@ -999,6 +999,14 @@ footer {
   grid-template-rows: 300px 100px 100px 100px 1200px 1100px;
   grid-template-columns: 13% 25% 49% 13%; }
 
+@media (max-width: 750px) {
+  .blog-super-grid {
+    grid-template-rows: 300px 100px 100px 100px 1200px 1300px; } }
+
+@media (max-width: 350px) {
+  .blog-super-grid {
+    grid-template-rows: 300px 100px 100px 100px 1200px 1400px; } }
+
 .blog-bg {
   grid-column: 1/6;
   grid-row: 1/2;
@@ -1211,8 +1219,7 @@ aside {
   grid-column: 1/2;
   width: 80%;
   margin: 0 auto;
-  padding: 0;
-  border: 1px solid red; }
+  padding: 0; }
   .blog-comments .blog-comment-section {
     padding: 20px 0; }
     .blog-comments .blog-comment-section a {
@@ -1232,11 +1239,14 @@ aside {
 
 @media (max-width: 750px) {
   .blog-comment-section {
-    margin: 0 auto;
+    margin: 0 auto 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
-    flex-flow: column; }
+    flex-flow: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
     .blog-comment-section .blog-img {
       padding-bottom: 20px; }
   .blog-comments .blog-comment-item {
@@ -1249,10 +1259,10 @@ aside {
 .blog-comments {
   height: 900px; }
 
-.submit-form {
+.blog-submit-form {
   width: 100%;
   margin: 30% auto 0; }
-  .submit-form fieldset {
+  .blog-submit-form fieldset {
     height: 200px;
     padding: 0;
     border: none; }

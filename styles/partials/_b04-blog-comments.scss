@@ -4,7 +4,6 @@
     width: 80%;
     margin: 0 auto;
     padding: 0;
-    border: 1px solid red;
     .blog-comment-section {
         padding: 20px 0;
         a {
@@ -30,12 +29,16 @@
 
 @media (max-width: 750px) {
     .blog-comment-section {
-        margin: 0 auto;
+        margin: 0 auto 30px;
+        // height: 300px;
         flex-flow: column;
+        justify-content: space-between;
         .blog-img {
             padding-bottom: 20px;
         }
     }
+    
+
 
     .blog-comments .blog-comment-item {
         width: 100%;

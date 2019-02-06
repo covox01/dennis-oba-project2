@@ -4,6 +4,18 @@
     grid-template-columns: 13% 25% 49% 13%;
 }
 
+@media (max-width: 750px) {
+    .blog-super-grid {
+        grid-template-rows: 300px 100px 100px 100px 1200px 1300px;
+    }
+}
+
+@media (max-width: 350px) {
+    .blog-super-grid {
+        grid-template-rows: 300px 100px 100px 100px 1200px 1400px;
+    }
+}
+
 .blog-bg {
     grid-column: 1/6;
     grid-row: 1/2;
